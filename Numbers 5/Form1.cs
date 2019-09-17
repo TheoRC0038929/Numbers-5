@@ -26,6 +26,17 @@ namespace Numbers_5
             richTextBox1.AppendText(c.ToString("N0") + "\n");
             richTextBox1.AppendText(c.ToString("0.00000E0") + "\n");
             richTextBox1.AppendText(c.ToString("0.000E0") + "\n");
+
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+     
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
