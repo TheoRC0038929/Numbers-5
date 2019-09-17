@@ -15,16 +15,15 @@ namespace Numbers_5
         public Form1()
         {
             InitializeComponent();
-            double d1 = 5e6;
-            richTextBox1.AppendText(d1.ToString() + "\n");
-            richTextBox1.AppendText(d1.ToString("N") + "\n");
-            richTextBox1.AppendText(d1.ToString("N3") + "\n");
-            richTextBox1.AppendText(d1.ToString("N0") + "\n");
-            richTextBox1.AppendText(d1.ToString("0") + "\n");
-            richTextBox1.AppendText(d1.ToString("0.0") + "\n");
-            richTextBox1.AppendText(d1.ToString("0.0E0") + "\n");
-            richTextBox1.AppendText(d1.ToString("0.00E00") + "\n");
-
+            double pi = 3.14159265;
+            richTextBox1.AppendText(pi.ToString() + "\n");
+            richTextBox1.AppendText(3.ToString("N3") + "\n");
+            richTextBox1.AppendText(3.ToString("N5") + "\n");
+            richTextBox1.AppendText(3.ToString("N15") + "\n");
+            ;
+            double c = 299792458;
+            richTextBox1.AppendText(c.ToString() + "\n");
+            richTextBox1.AppendText(3.ToString("N3") + "\n");
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
